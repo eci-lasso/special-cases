@@ -2,12 +2,13 @@
 
 <h3><a name="answer-utm">Capture UTM Information as Answers</a></h3>
 <p>To capture UTM information from the URL of the form, define hidden input fields for each value in <a href="https://github.com/eci-lasso/special-cases/blob/main/utm-answers/signup.html">signup.html</a>.</p>
-<pre>&lt;input type="hidden" name="UTMName" value="utmName-Value"/&gt;</pre>
 <p>A manual input question for each UTM field must exist in Lasso and then each field is to be mapped in <a href="https://github.com/eci-lasso/special-cases/blob/main/utm-answers/signup.php">signup.php</a>.</p>
-<pre>$lead->answerQuestionByIdForText($questionId, $_REQUEST['UTMName'])</pre>
 
 <h3><a name="answer-rating">Submit a Rating Based on an Answer</a></h3>
-<p></p>
+<p>Define a question with radio button or single-select drop-down menu answers in <a href="https://github.com/eci-lasso/special-cases/blob/main/answer-based-rating/signup.html" target="_blank">signup.html</a>.</p>
+<p>Note that Sales Details can only have one value so multi-answer questions will not work as expected.</p>
+<p>Pass the values and assign ratings to the answers in <a href="https://github.com/eci-lasso/special-cases/blob/main/answer-based-rating/signup.php">signup.php</a>.</p>
+<p>This method can also be applied for assigning values for other Sales Details based on answers</p>
 
 <h3><a name="answer-project">Submit to Projects Based on Answers</a></h3>
 <p></p>
