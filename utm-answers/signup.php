@@ -13,8 +13,8 @@ $apiKey = '1x1x1';
 
 if (empty($clientId) || empty($projectId) || empty($apiKey)){
 	throw new Exception('Required parameters are not set, please
-						check that your $clientId, $projectId and $apiKey are
-						configured correctly');
+				check that your $clientId, $projectId and $apiKey are
+				configured correctly');
 }
 
 /* Constructing and submitting a lead:
@@ -22,9 +22,9 @@ if (empty($clientId) || empty($projectId) || empty($apiKey)){
  */
 $lead = new LassoLead(
 	$_REQUEST['FirstName'],
-    $_REQUEST['LastName'],
-    $projectId,
-    $clientId
+	$_REQUEST['LastName'],
+	$projectId,
+	$clientId
 );
 
 $lead->addPhone($_REQUEST['Phone']);
