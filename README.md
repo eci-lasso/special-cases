@@ -5,10 +5,11 @@
 <p>A manual input question for each UTM field must exist in Lasso and then each field is to be mapped in <a href="https://github.com/eci-lasso/special-cases/blob/main/utm-answers/signup.php">signup.php</a>.</p>
 
 <h3><a name="answer-rating">Submit a Rating Based on an Answer</a></h3>
-<p>Define a question with radio button or single-select drop-down menu answers in <a href="https://github.com/eci-lasso/special-cases/blob/main/answer-based-rating/signup.html" target="_blank">signup.html</a>.</p>
+<p>Define a question with radio button or single-select drop-down menu answers in <a href="https://github.com/eci-lasso/special-cases/blob/main/answer-based-rating/signup.html">signup.html</a>.</p>
 <p>Note that Sales Details can only have one value so multi-answer questions will not work as expected.</p>
 <p>Pass the values and assign ratings to the answers in <a href="https://github.com/eci-lasso/special-cases/blob/main/answer-based-rating/signup.php">signup.php</a>.</p>
-<p>This method can also be applied for assigning values for other Sales Details based on answers.</p>
+<p>This method can also be applied for assigning values for other Sales Details based on answers</p>
 
 <h3><a name="answer-project">Submit to Projects Based on Answers</a></h3>
-<p></p>
+<p>Define a question with checkbox or multi-select drop-down menu answers in <a href="https://github.com/eci-lasso/special-cases/blob/main/answer-based-projects/signup.html">signup.html</a> and make the question required.</p>
+<p>Remove any validation checks for Project ID in <a href="https://github.com/eci-lasso/special-cases/blob/main/answer-based-projects/signup.php">signup.php</a>. Pass an empty array for projects and then assign each answer ID to a project ID.</p>
