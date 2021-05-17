@@ -12,4 +12,4 @@
 
 <h3><a name="answer-project">Submit to Projects Based on Answers</a></h3>
 <p>Define a question with checkbox or multi-select drop-down menu answers in <a href="https://github.com/eci-lasso/special-cases/blob/main/answer-based-projects/signup.html">signup.html</a> and make the question a required field on the form.</p>
-<p>Remove any validation checks for Project ID in <a href="https://github.com/eci-lasso/special-cases/blob/main/answer-based-projects/signup.php">signup.php</a>. Pass an empty array for projects and then create a loop to map each answer ID for the question to a project ID. Pass projects and questions when contructing a lead.</p>
+<p>Remove any validation checks for Project ID in <a href="https://github.com/eci-lasso/special-cases/blob/main/answer-based-projects/signup.php">signup.php</a>. Pass an empty array for projects and then create a loop to map each answer ID for the question to a project ID. Pass projects and questions when constructing a lead.</p>
