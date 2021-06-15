@@ -9,7 +9,6 @@
 </ul>
 
 <p>After updating the above fields, submit <code>signup.html</code>.</p>
-<p>&nbsp;</p>
 
 <h3><a name="answer-utm">Capture UTM Information as Answers</a></h3>
 <p>To capture UTM information from the URL of the form, define hidden input fields for each value in <a href="https://github.com/eci-lasso/special-cases/blob/main/utm-answers/signup.html">signup.html</a>.</p>
