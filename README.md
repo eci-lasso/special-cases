@@ -1,6 +1,6 @@
 <h1>Special Cases</h1>
 
-<p>The following fields will need to be updated in <code>signup.php</code> to test a submission:</p>
+<p>Update the following fields in <code>signup.php</code> to test a submission:</p>
 <ul>
 <li><code>clientId</code></li>
 <li><code>projectId</code> (except for submissions to multiple projects)</li>
@@ -8,7 +8,7 @@
 <li>Any other project-specific fields that require a text or numeric value</li>
 </ul>
 
-<p>After updating the above fields, submit <code>signup.html</code>.</p>
+<p> Update the URL for <code>window.location</code> and the website tracking code in <code>signup.html</code> and submit.</p>
 
 <h3><a name="answer-utm">Capture UTM Information as Answers</a></h3>
 <p>To capture UTM information from the URL of the form, define hidden input fields for each value in <a href="https://github.com/eci-lasso/special-cases/blob/main/utm-answers/signup.html">signup.html</a>.</p>
