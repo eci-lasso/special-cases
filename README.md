@@ -8,7 +8,7 @@
 <li>Any other project-specific fields that require a text or numeric value</li>
 </ul>
 
-<p> Update the URL for <code>window.location</code> and the website tracking code in <code>signup.html</code> and submit.</p>
+<p> Update the URL for <code>window.location</code> in <code>signup.html</code> and submit.</p>
 
 <h3><a name="answer-utm">Capture UTM Information as Answers</a></h3>
 <p>To capture UTM information from the URL of the form, define hidden input fields for each value in <a href="https://github.com/eci-lasso/special-cases/blob/main/utm-answers/signup.html">signup.html</a>.</p>
