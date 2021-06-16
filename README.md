@@ -16,7 +16,7 @@
 
 <h3><a name="answer-rating">Submit a Rating Based on an Answer</a></h3>
 <p>Define a question with radio button or single-select drop-down menu answers in <a href="https://github.com/eci-lasso/special-cases/blob/main/answer-based-rating/signup.html">signup.html</a>.</p>
-<p><b>Note:</b> Sales Details (Rating, Source Type, Secondary Source Type... etc) can only have one value so multi-answer questions are not recommended.</p>
+<blockquote><b>Note:</b> Sales Details (Rating, Source Type, Secondary Source Type... etc) can only have one value so multi-answer questions are not recommended.</blockquote>
 <p>Pass the values and assign ratings to the answers in <a href="https://github.com/eci-lasso/special-cases/blob/main/answer-based-rating/signup.php">signup.php</a>.</p>
 <p>This method can also be applied for assigning values for other Sales Details based on answers</p>
 
