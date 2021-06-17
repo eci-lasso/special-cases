@@ -5,7 +5,7 @@
 <li><code>clientId</code></li>
 <li><code>projectId</code> (except for submissions to multiple projects)</li>
 <li><code>apiKey</code></li>
-<li>Any other project-specific fields that require a text or numeric value</li>
+<li>Any other project-specific fields that require a text or numeric value (e.g., <code>setRating</code>, <code>setSourceType</code>... etc.)</li>
 </ul>
 
 <p> Update the URL for <code>window.location</code> in <code>signup.html</code> and submit.</p>
