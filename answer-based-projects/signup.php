@@ -85,5 +85,7 @@ $lead->addPhone($_REQUEST['Phone']);
 
 $lead->addEmail($_REQUEST['Email']);
 
+$lead->sendAssignmentNotification();
+
 $submitter = new RegistrantSubmitter();
 $curl      = $submitter->submit('https://api.lassocrm.com/registrants', $lead, $apiKey);
