@@ -38,13 +38,13 @@ $projects = [];
  */
 foreach($_REQUEST['Questions'][1111] as $index => $answer){
 	switch($answer) {
-		case 1001:
+		case 101:
 			$projects[] = 1111;
 			break;
-		case 1002:
+		case 102:
 			$projects[] = 2222;
 			break;
-		case 1003:
+		case 103:
 			$projects[] = 3333;
 			break;
 		default:
