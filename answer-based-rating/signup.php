@@ -41,7 +41,7 @@ $lead->addEmail($_REQUEST['Email']);
  * 		$lead->setRating($rating);
  * }
  */
-if (array_key_exists('1111',$_POST['Questions']) && $_POST['Questions']['1111']=='1001') {
+if (array_key_exists('1111',$_POST['Questions']) && $_POST['Questions']['1111']=='101') {
 	$lead->setRating('R');
 } 
 else {
