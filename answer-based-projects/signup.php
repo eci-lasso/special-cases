@@ -3,17 +3,13 @@
 require('src/LassoLead.php');
 require('src/RegistrantSubmitter.php');
 
-/* These variables should only be attached on the server side
- * and should not be hidden fields on the registration form
- * Note that $apiKey is where the Lasso UID is placed.
- */
 $clientId  = '1111';
 $apiKey = '1x1x1';
 
 if (empty($clientId) || empty($apiKey)){
-	throw new Exception('Required parameters are not set, please
-				check that your $clientId and $apiKey are
-				configured correctly');
+	throw new Exception('Required parameters are not set, please check that
+				your $clientId and $apiKey
+				are configured correctly');
 }
 
 $projects = [];
@@ -52,9 +48,6 @@ foreach($_REQUEST['Questions'][1111] as $index => $answer){
 	}
 }
 
-/* Constructing and submitting a lead:
- * Map form fields to the lead object and submit
- */
 $lead = new LassoLead(
 	$_REQUEST['FirstName'],
 	$_REQUEST['LastName'],
