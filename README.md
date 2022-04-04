@@ -4,7 +4,7 @@
 <ul>
 <li><code>clientId</code></li>
 <li><code>projectId</code> (except for submissions to multiple projects)</li>
-<li><code>apiKey</code></li>
+<li><code>apiKey</code> (This is the LassoUID from Lasso)</li>
 <li>Any other project-specific fields (e.g., <code>setRating</code>, <code>setSourceType</code>... etc.)</li>
 </ul>
 
