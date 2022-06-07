@@ -29,12 +29,12 @@ $lead->addEmail($_REQUEST['Email']);
  * Only for questions that require text input answers
  * $lead->answerQuestionByIdForText($questionId,$_REQUEST['Questions'][$questionId]);
  */
-$lead->answerQuestionByIdForText(107615, $_REQUEST['utm_campaign']);
-$lead->answerQuestionByIdForText(107616, $_REQUEST['utm_content']);
-$lead->answerQuestionByIdForText(132009, $_REQUEST['utm_id']);
-$lead->answerQuestionByIdForText(132008, $_REQUEST['utm_medium']);
-$lead->answerQuestionByIdForText(107617, $_REQUEST['utm_source']);
-$lead->answerQuestionByIdForText(107618, $_REQUEST['utm_term']);
+$lead->answerQuestionByIdForText(1111, $_REQUEST['utm_campaign']);
+$lead->answerQuestionByIdForText(2222, $_REQUEST['utm_content']);
+$lead->answerQuestionByIdForText(3333, $_REQUEST['utm_id']);
+$lead->answerQuestionByIdForText(4444, $_REQUEST['utm_medium']);
+$lead->answerQuestionByIdForText(5555, $_REQUEST['utm_source']);
+$lead->answerQuestionByIdForText(6666, $_REQUEST['utm_term']);
 
 $lead->sendAssignmentNotification();
 
