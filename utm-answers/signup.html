@@ -31,18 +31,27 @@
 		// Grabs the UTM information from the URL before submitting the form
 		$("#register").click(function(){
 			const urlParams = new URLSearchParams(window.location.search);
-			const utmCampaign = urlParams.get("utm_campaign");
-			$('[name="utm_campaign"]').val(utmCampaign);
-			const utmContent = urlParams.get("utm_content");
-			$('[name="utm_content"]').val(utmContent);
-			const utmID = urlParams.get("utm_id");
-			$('[name="utm_id"]').val(utmID);
-			const utmMedium = urlParams.get("utm_medium");
-			$('[name="utm_medium"]').val(utmMedium);
-			const utmSource = urlParams.get("utm_source");
-			$('[name="utm_source"]').val(utmSource);
-			const utmTerm = urlParams.get("utm_term");
-			$('[name="utm_term"]').val(utmTerm);
+			let names = ["utm_campaign","utm_content","utm_id","utm_medium","utm_source","utm_term"];
+			names.forEach(function(name){
+				value = urlParams.get(name);
+				$('[name="'+name+'"]').val(value);
+			})
+			/*
+			 * To individually pass UTM information to input fields
+			 * 
+			 * const utmCampaign = urlParams.get("utm_campaign");
+			 * $('[name="utm_campaign"]').val(utmCampaign);
+			 * const utmContent = urlParams.get("utm_content");
+			 * $('[name="utm_content"]').val(utmContent);
+			 * const utmID = urlParams.get("utm_id");
+			 * $('[name="utm_id"]').val(utmID);
+			 * const utmMedium = urlParams.get("utm_medium");
+			 * $('[name="utm_medium"]').val(utmMedium);
+			 * const utmSource = urlParams.get("utm_source");
+			 * $('[name="utm_source"]').val(utmSource);
+			 * const utmTerm = urlParams.get("utm_term");
+			 * $('[name="utm_term"]').val(utmTerm);
+			*/
 			$("#lassoSignupForm").submit();
 			return false;
 		});
