@@ -28,11 +28,25 @@
 				return register();
 			}
 		});
-		// Passes information to the PHP file and re-directs to the Thank You page
+		// Grabs the UTM information from the URL before submitting the form
 		$("#register").click(function(){
+			const urlParams = new URLSearchParams(window.location.search);
+			const utmCampaign = urlParams.get("utm_campaign");
+			$('[name="utm_campaign"]').val(utmCampaign);
+			const utmContent = urlParams.get("utm_content");
+			$('[name="utm_content"]').val(utmContent);
+			const utmID = urlParams.get("utm_id");
+			$('[name="utm_id"]').val(utmID);
+			const utmMedium = urlParams.get("utm_medium");
+			$('[name="utm_medium"]').val(utmMedium);
+			const utmSource = urlParams.get("utm_source");
+			$('[name="utm_source"]').val(utmSource);
+			const utmTerm = urlParams.get("utm_term");
+			$('[name="utm_term"]').val(utmTerm);
 			$("#lassoSignupForm").submit();
 			return false;
 		});
+		// Passes information to the PHP file and re-directs to the Thank You page
 		function register(){
 			jQuery.ajax({
 				type: "POST",
@@ -55,12 +69,12 @@
 <body>
 	<table><tr><td>
 		<form id="lassoSignupForm">
-			<input type="hidden" name="utm_campaign" value="utmCampaign-Value"/>
-			<input type="hidden" name="utm_content" value="utmContent-Value"/>
-			<input type="hidden" name="utm_id" value="utmID-Value"/>
-			<input type="hidden" name="utm_medium" value="utmMedium-Value"/>
-			<input type="hidden" name="utm_source" value="utmSource-Value"/>
-			<input type="hidden" name="utm_term" value="utmTerm-Value"/>
+			<input type="hidden" name="utm_campaign" value=""/>
+			<input type="hidden" name="utm_content" value=""/>
+			<input type="hidden" name="utm_id" value=""/>
+			<input type="hidden" name="utm_medium" value=""/>
+			<input type="hidden" name="utm_source" value=""/>
+			<input type="hidden" name="utm_term" value=""/>
 			
 			<p>
 				<label>First Name*:</label><br />
